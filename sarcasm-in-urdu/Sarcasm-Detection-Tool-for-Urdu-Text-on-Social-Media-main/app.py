@@ -77,7 +77,7 @@ with open("stopwords-ur.txt", 'r', encoding='utf-8') as file:
     stopwords_from_file = file.read().splitlines()
 
 stopdf = pd.read_csv("urdu_stopwords.csv", encoding='utf-8')
-stopwords_from_csv = stopdf["stopword"].tolist()
+stopwords_from_csv = stopdf["stopwords"].tolist()
 
 # Additional stopwords
 stop_words = set("""
